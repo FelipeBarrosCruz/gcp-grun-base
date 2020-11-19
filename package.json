@@ -1,0 +1,44 @@
+{
+  "name": "gcp-grun-base",
+  "version": "1.0.0",
+  "description": "gcp gRun base",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "lint": "eslint index.js"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "npm run lint"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FelipeBarrosCruz/gcp-grun-base.git"
+  },
+  "keywords": [
+    "gcp",
+    "grun",
+    "base",
+    "nodejs"
+  ],
+  "author": "FelipeBarrosCruz <felipe.barros.pt@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FelipeBarrosCruz/gcp-grun-base/issues"
+  },
+  "homepage": "https://github.com/FelipeBarrosCruz/gcp-grun-base#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "eslint": "7.13.0",
+    "eslint-config-airbnb-base": "14.2.1",
+    "eslint-plugin-import": "2.22.1",
+    "eslint-plugin-mocha": "8.0.0",
+    "eslint-plugin-no-only-tests": "2.4.0",
+    "husky": "^4.3.0"
+  }
+}
